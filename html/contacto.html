@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fotografías Lemi</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/generalStyle.css">
+        <link rel="stylesheet" href="../styles/contactoStyle.css">
+
+        <!-- Estas lineas son para cambiar el color del navegador en android y ios. Ni en google chrome ni en Firefox se ve afectado -->
+        <meta name="theme-color" content="#f4ede6">
+        <meta name="msapplication-navbutton-color" content="#f4ede6">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#f4ede6">
+
+</head>
+
+<body>
+    <nav class="navegacion">
+        <div class="contenedorLogo">
+            <img src="../images/logo.png" alt="">
+        </div>
+
+        <div class="contenedorEnlaces">
+            <ul class="listaEnlaces">
+                <li class="enlaceNavegacionL"><a href="./index.html">Inicio</a></li>
+                <li class="enlaceNavegacionL"><a href="./aboutUs.html">About</a></li>
+                <li class="enlaceNavegacionL portfolio"><a href="./portfolio.html">Portfolio ⮛</a>
+                    <ul class="listaEnlacesPortfolio">
+                        <li class="subEnlaceNavegacionL"><a
+                                href="./portfolioComida.html">Comida</a></li>
+                        <li class="subEnlaceNavegacionL"><a
+                                href="./portfolioViajes.html">Viajes</a></li>
+                        <li class="subEnlaceNavegacionL"><a
+                                href="./portfolioGimnasia.html">Gimnasia</a></li>
+                        <li class="subEnlaceNavegacionL"><a
+                                href="./portfolioAnimales.html">Animales</a></li>
+                    </ul>
+                </li>
+                <li class="enlaceNavegacionL active"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="contenedorContacto">
+        <div class="contenedorFormulario">
+            <h2>
+                Si quieres obtener más información, solo tienes que cubrir este formulario y nos pondremos en contacto
+                contigo lo antes posible 😊
+            </h2>
+            <form>
+                <div class="cajaContenido">
+                    <input type="text" name="nombre" id="nombre" required="">
+                    <label>Nombre</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="text" name="apellidos" id="apellidos" required="">
+                    <label>Apellidos</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="email" name="correo" id="correo" required="">
+                    <label>Correo Electrónico</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="tel" name="telefono" id="telefono" required="">
+                    <label>Teléfono</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="text" name="asunto" id="asunto" required="">
+                    <label>Asunto</label>
+                </div>
+                <div class="cajaContenido">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="8"
+                        placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <div class="cajaBoton">
+                    <center>
+                        <input type="submit" class="button" value="Enviar">
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Leticia Martínez Limeres - <a
+                href="mailto:leticia.martinez.limeres@rai.usc">leticia.martinez.limeres@rai.usc</a></p>
+        <p>Brais Míguez Varela - <a href="mailto:brais.miguez@rai.usc">brais.miguez@rai.usc</a></p>
+        <p>Copyright@ DAW-2023</p>
+    </footer>
+
+    <script src="../js/contacto.js"></script>
+
+</body>
+
+</html>

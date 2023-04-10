@@ -1,0 +1,255 @@
+/*+++++++++++++++++++++
+=====================================
+ Plantilla : Fotografia LeMi (estilos generales para todas las paginas)
+ Author Name : Leticia Martinez y Brais Miguez
+ Version : 1.0
+===============================
++++++++++++++++++++*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-principal-claro: rgb(244, 237, 230);
+  --color-principal-claro-transparente: rgba(244, 237, 230, 0.6);
+  --color-principal-claro-semitransparente: rgba(244, 237, 230, 0.9);
+  --color-complementario-claro: #3aaa38;
+  --color-complementario-mas-claro: rgb(216, 238, 215);
+  --color-white: #fff;
+  --color-black: #2b2a2a;
+  --color-grey-body: #43484e;
+  --color-grey-light: #ccc;
+  --enviar-mensaje-shadow: rgba(0, 0, 0, 0.4);
+}
+
+::selection {
+  background-color: #d8eed7;
+}
+
+@font-face {
+  font-family: "Karatone";
+  src: url("../fonts/Karatonedemo-0Wr79.ttf");
+}
+
+@font-face {
+  font-family: "Leafy";
+  src: url("../fonts/Leafy-Regular.ttf");
+}
+@font-face {
+  font-family: "Prestigious";
+  src: url("../fonts/Prestigious.otf");
+}
+@font-face {
+  font-family: "Daisy";
+  src: url("../fonts/Daisy-Regular.ttf");
+}
+@font-face {
+  font-family: "Loistave";
+  src: url("../fonts/Loistave.ttf");
+}
+@font-face {
+  font-family: "Maglite";
+  src: url("../fonts/Maglite.ttf");
+}
+@font-face {
+  font-family: "Harmonais Italic";
+  src: url("../fonts/HarmonaisItalic.otf");
+
+}
+
+@font-face {
+  font-family: "Harmonais";
+  src: url("../fonts/HarmonaisRegualar.otf");
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+body {
+  background-color: var(--color-principal-claro);
+  overflow-x: hidden;
+}
+
+section,
+header {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/*--Navegacion--*/
+
+nav {
+  display: grid;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 80px;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-principal-claro);
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 0 20px black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: "Josefine Sans", sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  z-index: 10;
+}
+
+h1.titulo {
+  font-family: "Leafy", Helvetica, serif;
+  font-size: 100px;
+  color: var(--color-principal-claro);
+  font-weight: 200;
+}
+
+h2.subtitulo {
+  font-family: "Karatone", Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  color: var(--color-principal-claro);
+}
+
+
+h2.titulo {
+  font-family: "Harmonais Italic", Helvetica, sans-serif;
+  font-size: 90px;
+  color: rgba(0, 0, 0, 0.68);
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+h4.subtitulo {
+  font-weight: 200;
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.419);
+  font-weight: 400;
+}
+
+.contenedorLogo {
+  width: 100%;
+  text-align: center;
+}
+
+.contenedorLogo > img {
+  height: 50px;
+}
+
+.contenedorEnlaces {
+  width: 100%;
+  height: 100%;
+  padding-left: 200px;
+  padding-right: 30px;
+  margin: auto;
+  align-self: center;
+}
+
+.listaEnlaces {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.enlaceNavegacionL {
+  list-style: none;
+  position: relative;
+}
+
+.enlaceNavegacionL > a {
+  color: black;
+}
+
+.enlaceNavegacionL.active > a,
+.subenlaceNavegacionL.active > a {
+  color: var(--color-complementario-claro);
+  font-size: large;
+  border-bottom: 2px solid var(--color-complementario-claro);
+}
+
+.listaEnlacesPortfolio{
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100px;
+  list-style: none;
+  background-color: var(--color-principal-claro);
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+.listaEnlacesPortfolio > li{
+  padding: 5px;
+  justify-content: center; 
+  border-bottom: 2px solid rgba(0, 0, 0, 0); 
+  transition: all 0.3s ease;
+}
+
+.listaEnlacesPortfolio > li:hover{
+  background-color: var( --color-principal-claro);
+  border-bottom: 2px solid var(--color-grey-body);
+}
+
+.portfolio:hover > ul{
+  display: block;
+}
+
+/* -- Footer -- */
+footer{
+  background-color: var(--color-grey-body);
+  padding: 20px;
+}
+
+footer > p{
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer > p > a{
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 900px){
+  nav{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  h1.titulo{
+    font-size: 60px;
+  }
+
+  h2.titulo{
+    font-size: 50px;
+  }
+}
+
+
+

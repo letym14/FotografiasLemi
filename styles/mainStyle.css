@@ -1,0 +1,434 @@
+
+/*+++++++++++++++++++++
+=====================================
+ Plantilla : Fotografia LeMi
+ Author Name : Leticia Martinez y Brais Miguez
+ Version : 1.0
+===============================
++++++++++++++++++++*/
+
+
+
+/*Header de la pagina*/
+header {
+  padding-top: 80px;
+  background-image: url("../images/fondoOscuro2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contenedorHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contenedorHeader > * {
+  margin: 15px;
+}
+
+.buttonHeader {
+  font-family: "Karatone", Helvetica, sans-serif;
+  background-color: var(--color-principal-claro);
+  color: black;
+  border-radius: 30px;
+  font-size: 19px;
+  font-weight: 300;
+  padding: 14px 35px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.buttonHeader:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 var(--color-complementario-mas-claro);
+}
+
+.buttonHeader:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+/*About us resumen*/
+#aboutUsResumen {
+  padding: 20px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.contenedorImagen,
+.contenedorImagen iframe {
+  width: 100%;
+  height: 100%;
+}
+.contenedorImagen iframe {
+  border: 0;
+}
+.contenedorInfo {
+  padding: 20px;
+  margin-top: -50px;
+  text-align: center;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 200px;
+  height: 37px;
+  margin: 60px 0;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  font-size: 2em;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+/*Galeria resumen*/
+#galeriaResumen {
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+  min-height: 0vh;
+  margin: 80px auto;
+}
+
+.contenedorResumen {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.resumen img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.resumen {
+  height: 300px;
+  width: 250px;
+  text-align: center;
+  background-color: var(--color-principal-claro);
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #c1bbb6, -3px -3px 5px #fbf8f5;
+  color: var(--color-grey-body);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resumenTitulo {
+  margin: 10px auto;
+  font-weight: 800;
+  font-size: 25px;
+  font-family: "Karatone";
+  color: rgba(0, 0, 0, 0.68);
+  border-bottom: 2px dotted var(--color-grey-body);
+  width: fit-content;
+}
+
+.resumenInfo {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(103, 102, 102);
+}
+
+.resumen:hover {
+  background-color: var(--color-complementario-mas-claro);
+  transform: translate(-5px, -5px);
+  box-shadow: 8px 8px 5px #c1bbb6, -8px -8px 5px #fbf8f5;
+}
+
+/*Review resumen*/
+#reviewsResumen {
+  /* margin-top: -6em; */
+  padding: 100px;
+  text-align: center;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(225, 224, 223, 0.495),
+      rgba(213, 218, 212, 0.742)
+    ),
+    url("../images/nat-9.jpg");
+  background-size: cover;
+  box-shadow: inset 0px 0px 80px rgba(0, 0, 0, 0.68);
+  background-attachment: fixed;
+}
+
+#reviewsResumen>h2{
+  margin-bottom:80px;
+}
+
+.opinion {
+  background-color: var(--color-principal-claro-semitransparente);
+  height: 200px;
+  max-width: 900px;
+  width: 100%;
+  margin: 80px auto;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr 4fr;
+  align-items: center; 
+  justify-content: center;
+  transform: skewX(-12deg);
+}
+
+.opinionTitulo{
+  margin-bottom: 10px;
+}
+
+.opinion > * {
+  transform: skewX(12deg);
+}
+
+.opinionImagen img {
+  width: 120px;
+  height: 120px;
+  padding:10px;
+  margin: 0 auto;
+}
+
+.opinionTexto{
+  text-align: justify;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 30px;
+  font-family: "Josefine Sans", serif;
+}
+
+
+/*Contacto resumen*/
+#contactoResumen{
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+  min-height: 70vh !important;
+}
+
+.redes{
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 60%;
+}
+
+.redes img{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* Cookies */
+#cajaCookies {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 20px;
+  background-color: white;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+}
+
+#cajaCookies > * {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+#botonAceptarCookies {
+  background-color: var(--color-complementario-mas-claro);
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#cajaCookies button:hover {
+  background-color: var(--color-complementario-claro);
+}
+
+#cajaCookies a{
+  font-weight: bold;
+  color: var(--color-complementario-claro);
+}
+
+.enlaceSocial{
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1256px){
+  .resumen{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .resumen img{
+    width:50%;
+    height: 50%;
+  }
+
+  .opinion{
+    padding:10px;
+  }
+  #aboutUsResumen{
+    grid-template-columns: 1fr;
+  }
+
+  .redes{
+    width: 100%;
+  }
+}
+
+.opinion img{
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+}
+
+@media only screen and (max-width: 600px){
+  .contenedorResumen{
+    grid-template-columns: 1fr;
+    
+  }
+
+  .contenedorResumen > *{
+    width:50%;
+  }
+  
+  .redes{
+    flex-direction: column;
+  }
+  .redes > *{
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 740px){
+  .opinionTexto{
+    padding: 10px;
+    transform: skewX(0deg);
+  }
+  .opinion{
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10px;
+    transform: skewX(0deg);
+  }
+  .opinionImagen{
+    transform: skewX(0deg);
+  }
+
+}
+@media only screen and (max-width: 370px){
+  h4.subtitulo{ 
+    font-size: 16px;
+  }
+}
+
+

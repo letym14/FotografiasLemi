@@ -1,0 +1,122 @@
+/*+++++++++++++++++++++
+=====================================
+ Plantilla : Fotografia LeMi - About Us
+ Author Name : Leticia Martinez y Brais Miguez
+ Version : 1.0
+===============================
++++++++++++++++++++*/
+
+/*Header de la pagina*/
+
+header {
+    padding-top: 80px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-image: linear-gradient(
+        to left bottom,
+        rgba(26, 27, 25, 0.784),
+        rgba(26, 27, 25, 0.784)
+      ),
+    url("../images/fotografoFondo.webp");
+
+}
+
+.contenedorTitulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.contenedorTitulo>*{
+    color: var(--color-principal-claro);
+}
+
+.subtitulo{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: "Karatone", Helvetica, sans-serif;
+}
+
+
+/*Seccion de los socios*/
+
+#contenedorSocios{
+    padding: 30px;
+    margin: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socio{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    width: 100%;
+}
+
+.perfilSocio{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+    background-color: aliceblue;
+}
+
+.perfilSocio img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.perfilSocio img:hover{
+    transform: scale(1.1);
+}
+
+.descripcionSocio{
+    padding: 20px;
+    height: 50%;
+    margin: auto;
+    max-width: 450px;
+    display: inline-block;
+    color: var(--color-grey-body);
+}
+
+.descripcionSocio>*{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nombreSocio{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.descripcionSocio p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+@media only screen and (max-width: 825px) {
+    .socio{
+        flex-direction: column;
+    }
+
+    .socio{
+        margin: 20px 0px;
+    }
+
+    .segundoSocio{
+       flex-direction: column-reverse;
+    }
+}
+    

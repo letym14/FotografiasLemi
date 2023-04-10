@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogo>
+
+    <Valoracion>
+        <Imagen>../images/martin.jpeg</Imagen>
+        <Titulo>Calidad de fotografía inmejorable</Titulo>
+        <Review>Estoy muy impresionado con la calidad de las fotografías. Sus imágenes son impresionantes y realmente capturan la belleza natural del mundo que nos rodea. Definitivamente trabajaré con ellos nuevamente en el futuro - Martin Omil</Review>
+    </Valoracion>
+
+    <Valoracion>
+        <Imagen>../images/sabela.jpeg</Imagen>
+        <Titulo>Unas grandes fotografías</Titulo>
+        <Review>Brais es el mejor fotógrafo de retratos que he conocido. Él realmente captura la personalidad de cada individuo en sus fotos y hace que la sesión sea divertida y relajante. Estoy muy feliz con las fotos que tomó de mi familia y las guardaré para siempre - Sabela López</Review>
+    </Valoracion>
+
+    <Valoracion>
+        <Imagen>../images/raulma.jpg</Imagen>
+        <Titulo>Artistas en toda regla</Titulo>
+        <Review>Fue un placer trabajar con el equipo de fotógrafos de esta empresa. Me encantó cómo Lety capturó la emoción y la energía de mi clase de gimnasia. Definitivamente los recomiendo a cualquiera que busque fotografías de alta calidad - Raul Mariño</Review>
+    </Valoracion>
+
+</Catalogo>

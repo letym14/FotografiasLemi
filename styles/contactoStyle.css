@@ -1,0 +1,125 @@
+/*+++++++++++++++++++++
+=====================================
+ Plantilla : Fotografia LeMi - Contacto
+ Author Name : Leticia Martinez y Brais Miguez
+ Version : 1.0
+===============================
++++++++++++++++++++*/
+
+#contenedorContacto {
+  background-image: url("../images/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 190px;
+  min-height: 1300px;
+}
+
+h2 {
+    font-family: "Harmonais", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-grey-body);
+    padding: 0px 20px 50px 20px;
+}
+
+/*-----------------Formulario-----------------*/
+.contenedorFormulario {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px 0 rgba(3, 7, 5, 0.847);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  top: 85%;
+  left: 50%;
+  max-width: 40vw; 
+  width: 100%;
+  padding: 40px;
+}
+
+.contenedorFormulario .cajaContenido {
+  position: relative;
+}
+
+.contenedorFormulario .cajaContenido input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: "Harmonais", Helvetica, sans-serif;
+  color: var(--color-grey-body);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var(--color-grey-body);
+  outline: none;
+  background: transparent;
+}
+
+.contenedorFormulario .cajaContenido label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Harmonais", Helvetica, sans-serif;
+  color: var(--color-grey-body);
+  pointer-events: none;
+  transition: .5s;
+}
+
+.contenedorFormulario .cajaContenido input:focus~label,
+.contenedorFormulario .cajaContenido input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.contenedorFormulario textarea{
+  font-family: "Harmonais", Helvetica, sans-serif;
+  font-size: 16px; 
+  color: var(--color-grey-body); 
+  padding: 20px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px; 
+  resize: none; 
+  border-color: var(--color-grey-light);
+  transition: border-color 0.3s ease-in-out; 
+  width: 100%;
+  background-color: white;
+  margin: 10px 0px 40px 0px;
+}
+
+.contenedorFormulario textarea:focus {
+  border-color: var(--color-principal-claro); 
+}
+
+
+/*-----------------Boton Envio-----------------*/
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  width: 160px;
+  padding: 0px 20px;
+  border-radius: 15px;
+  background: var(--color-principal-claro);
+  background-size: 400%;
+  color: var(--color-grey-body);
+  border-color: var( --color-principal-claro-transparente); 
+  font-family: "Harmonais", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+
+/*-----------------Responsive-----------------*/
+
+@media only screen and (max-width: 850px) {
+  .contenedorFormulario {
+    max-width: 80vw;
+  }
+}
+

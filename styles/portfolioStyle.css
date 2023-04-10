@@ -1,0 +1,125 @@
+/*+++++++++++++++++++++
+=====================================
+ Plantilla : Fotografia LeMi - Portfolio
+ Author Name : Leticia Martinez y Brais Miguez
+ Version : 1.0
+===============================
++++++++++++++++++++*/
+
+section{
+  min-height: 0;
+}
+
+#portfolio{
+  padding: 90px 0;
+}
+.seccionVacia{
+  height: 50vh;
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -15px auto;
+  padding: 150px 0;
+  width:60vw;
+  transition: all 1s ease-in;
+}
+
+.sec1{
+  background-image: url("../images/curva1.png");
+}
+.sec2{
+  background-image: url("../images/curva2.png");
+}
+.primeraSeccion{
+  align-items: center;
+  display: grid;
+  padding:30px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  transition: all 1s ease-in;
+  z-index: 3;
+}
+
+.imagenRecuadro{
+  width: 100%;
+  max-width: 35vw;
+  height: auto;
+  border: 10px double var(--color-grey-body);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+  background-color: var(--color-principal-claro);
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+}
+
+.imagenRecuadro:hover{
+  transform: scale(1);
+  border-radius: 30px;
+}
+
+.oculta{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
+  
+}
+
+
+@media only screen and (max-width:1100px){
+  .first{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .seccionVacia{
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  h2.titulo{
+    font-size: 7vw !important;
+  }
+  .sec1{
+    transform: rotate(10deg);
+  }
+  .sec2{
+    transform: rotate(-10deg);
+  }
+  
+}
+
+@media only screen and (max-width: 750px){
+  .seccionVacia{
+    background-size: contain;
+  }
+ 
+}
+
+@media only screen and (max-width: 650px){
+  .seccionVacia{
+    min-height: 200px;
+  }
+  
+
+  
+
+}
+
+@media only screen and (max-width: 500px){
+  .sec1{
+    transform: rotate(20deg);
+  }
+  .sec2{
+    transform: rotate(-20deg);
+  }
+  
+
+}
+
+
+
+
+
+

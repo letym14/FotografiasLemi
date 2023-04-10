@@ -1,0 +1,19 @@
+{
+    "socios": [
+        {
+            "nombre": "Brais Miguez",
+            "descripcion": "Experto en retratos y fotografía de moda. Con más de 10 años de experiencia en la industria, tiene un ojo para la creatividad y la estética, y se esfuerza por crear imágenes que cuenten una historia.",
+            "foto": "../images/socio1.jpg"
+        },
+        {
+            "nombre": "Leticia Martínez",
+            "descripcion": "Especialista en fotografía en movimiento. Se enfoca en capturar momentos únicos y especiales en cada sesión de fotos, y trabaja en estrecha colaboración con los clientes para asegurarse de que cada detalle sea perfecto",
+            "foto": "../images/socio2.jpg"
+        },
+        {
+            "nombre": "Sandra Portela",
+            "descripcion": "Fotógrafa de paisajes. Con un ojo para la composición y el color, captura imágenes impresionantes que transportan a los espectadores a lugares nuevos y emocionantes.",
+            "foto": "../images/socio3.jpg"
+        }
+    ]
+}
